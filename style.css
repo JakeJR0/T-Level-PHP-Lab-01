@@ -1,0 +1,48 @@
+.table-container {
+    width: 300px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 12px;
+    padding: 5px;
+    padding-top: 15px;
+    box-shadow: 3px 3px;
+}
+
+.table-collection {
+    margin-top: 80px;
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+}
+
+#compare-table {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#student-status-table {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 576px) {
+    .table-collection {
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    #compare-table {
+        width: 100%;
+    }
+
+    #student-status-table {
+        width: 100%;
+    }
+}
