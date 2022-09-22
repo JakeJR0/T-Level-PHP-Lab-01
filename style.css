@@ -32,6 +32,11 @@
     margin-top: 50px;
 }
 
+footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 576px) {
     .table-collection {
         grid-template-columns: auto;
