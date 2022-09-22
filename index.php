@@ -1,3 +1,7 @@
+<?php
+    include 'site_info.php';
+    include 'student_info.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,10 +18,6 @@
                 Student Viewer
             </h1>
         </div>
-        <?php
-            # Includes the student.php file.
-            include('student.php'); 
-        ?>
         <div>
             <div class="table-collection">
                 <div class="table-container">
