@@ -15,8 +15,11 @@
         
         <div style="margin-top: 30px;" class="text-center">
             <h1 class="display-4">
-                Student Viewer
+                <?php echo SITE_NAME; ?>
             </h1>
+            <p class="lead">
+                <?php echo SITE_DESCRIPTION; ?>
+            </p>
         </div>
         <div>
             <div class="table-collection">
@@ -186,6 +189,10 @@
                     }
                 ?>
         </table>
-
+        <!-- Footer (Shows College Name and Course name) -->
+        <footer>
+            <p class="text-center">College Name: <strong><?php echo '<a target="_blank" href="'. COLLEGE_URL .'">'. COLLEGE_NAME .'</a>'; ?></strong></p>
+            <p class="text-center">Course Name: <strong><?php echo '<a target="_blank" href="'. COURSE_URL .'">'. COURSE_NAME .'</a>'; ?></strong></p>
+        </footer>
     </body>
 </html>
