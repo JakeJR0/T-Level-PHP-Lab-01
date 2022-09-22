@@ -5,6 +5,7 @@
     </head>
     <body>
         <?php
+            # Creates the students array
             $students = array(
                 array('name' => "Mitchell", 'age'=> 17),
                 array('name' => "Derron", 'age'=> 17),
@@ -22,13 +23,18 @@
                 array('name' => "Roddick", 'age'=> 17)
             );
 
+            # Initialize Variables 
+            
             $average_age = 0;
             $student_age = 0;
 
+            # Loops through students
             foreach ($students as $student) {
+                # Adds student's age to average age
                 $average_age += $student['age'];
             }
-
+            
+            # Calculates the average 
             $average_age = strval(round($average_age / count($students)));
             
         ?>
