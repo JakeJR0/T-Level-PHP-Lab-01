@@ -1,15 +1,32 @@
-<?php
-    include 'site_info.php';
-    include 'student_info.php';
-?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <?php
+            include 'site_info.php';
+            include 'student_info.php';
+        ?>
         <title>Student Viewer</title>
+
+        <!-- Meta Tags -->
+
+        <meta charset="UTF-8">
+        <meta name="title" content="<?php echo SITE_NAME; ?>">
+        <meta name="description" content="<?php echo SITE_DESCRIPTION; ?>">
+        <meta name="theme-color" content="<?php echo SITE_COLOUR; ?>">
+        <meta property="twitter:card" content="summary">
+        <meta property="twitter:title" content="<?php echo SITE_NAME; ?>">
+        <meta property="twitter:url" content="<?php echo SITE_URL; ?>">
+        <meta property="twitter:description" content="<?php echo SITE_DESCRIPTION; ?>">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="<?php echo SITE_URL; ?>">
+        <meta property="og:description" content="<?php echo SITE_DESCRIPTION; ?>">
+        <meta property="og:title" content="<?php echo SITE_NAME; ?>">
         
         <!-- Bootstrap CSS -->
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
     </head>
     <body>
         
